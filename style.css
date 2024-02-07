@@ -1,0 +1,97 @@
+import url('https://fonts.google.com/specimen/Anton')
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url("pics/sn.jpg");
+    background-size: cursor: auto;;
+    background-position: center;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: red;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+span{
+    color:green;
+}
+
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 2px gray;
+    font-style: oblique;
+
+}
+
+nav ul li a:hover{
+    color: green;
+    transition:4s ;
+    transform: scale(1.2);
+}
+
+.content{
+    position: absolute;
+    color:white;
+    transform:translateY(-50%);
+    top: 50%;
+    left: 8%;
+}
+
+.secret{
+    bottom: 15%;
+    right: 75%;
+    position: absolute;
+}
+
+.secret form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.secret  form textarea :first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid green;
+    outline: none ;
+    border-radius: 30px;
+}
+
+.secret form input:last-child{
+position: absolute;
+display: inline-block;
+outline: none;
+padding: 10px;
+border-radius: 30px;
+background-color: green;
+color: black;
+box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+top: 6px;
+right: 6px;
+}
